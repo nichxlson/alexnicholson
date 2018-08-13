@@ -1,0 +1,172 @@
+.page-home {
+    section {
+        display: block;
+        padding: 50px 0 30px;
+
+        &.no-padding {
+            padding: 0;
+        }
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        article {
+            height: 0;
+            font-size: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            opacity: 1;
+            overflow: hidden;
+            transition: opacity 0.2s;
+
+            span {
+                padding: 5px 8px;
+                font-family: $font-family-space-mono;
+                font-size: 13px;
+                background-color: #222;
+                color: #fff;
+                position: absolute;
+                top: -30px;
+                left: 15px;
+                transition: top 0.2s ease-in;
+            }
+
+            &:hover {
+                //opacity: 1;
+
+                span {
+                    top: 0;
+                }
+            }
+        }
+
+        .project-1-1 {
+            article {
+                padding-bottom: 100%;
+            }
+        }
+
+        .project-1-2 {
+            grid-row: span 2;
+
+            article {
+                padding-bottom: 50%;
+            }
+        }
+
+        .project-2-1 {
+            grid-column: span 2;
+
+            article {
+                padding-bottom: 50%;
+            }
+        }
+
+        .project-2-2 {
+            grid-column: span 2;
+            grid-row: span 2;
+
+            article {
+                padding-bottom: 100%;
+            }
+        }
+    }
+
+    h1, h2, h3, h4 {
+        display: block;
+        font-family: $font-family;
+        font-weight: $font-weight-bold;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        display: block;
+        max-width: 60%;
+        font-family: $font-family;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+
+        b, strong {
+            font-weight: $font-weight-semi-bold;
+        }
+
+        a {
+            color: $colour-blue;
+            text-decoration: none;
+            border-bottom: 2px solid $colour-blue;
+            transition: background-color 0.2s, color 0.2s;
+
+            &:hover {
+                background-color: $colour-blue;
+                color: #fff;
+            }
+        }
+    }
+
+    ul {
+        display: block;
+        max-width: 60%;
+        font-family: $font-family;
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+
+        li {
+            display: block;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 7px;
+                left: 0;
+                width: 5px;
+                height: 5px;
+                background-color: #222;
+                border-radius: 100%;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .two-column {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .column {
+            width: 90%;
+        }
+
+        p {
+            max-width: none;
+        }
+    }
+}

@@ -1,0 +1,402 @@
+/*! Copyright (c) 2018 alexnicholson.co.uk */
+/*! Copyright (c) 2018 alexnicholson.co.uk */
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:400,700);@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,600,700);/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+body {
+  background-color: #f0f0f0;
+  height: 100%;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+#app {
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 90%;
+  }
+}
+
+.wrapper.no-padding {
+  padding: 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: block;
+  clear: both;
+  position: relative;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+header {
+  display: block;
+}
+
+header .wrapper {
+  background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .logo img {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border-radius: 100%;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+header .logo img:hover {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+header .logo .text span {
+  display: block;
+  font-family: "Space Mono", monospace;
+  color: #222;
+}
+
+header .logo .text span.large-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+header .logo .text span.small-text {
+  font-size: 12px;
+}
+
+header nav {
+  font-size: 0;
+}
+
+header nav a {
+  display: inline-block;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: #222;
+  margin-right: 10px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+header nav a:last-of-type {
+  margin-right: 0;
+}
+
+header nav a.active {
+  background-color: #222;
+  color: #fff;
+}
+
+.page-home section {
+  display: block;
+  padding: 50px 0 30px;
+}
+
+.page-home section.no-padding {
+  padding: 0;
+}
+
+.page-home .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.page-home .projects article {
+  height: 0;
+  font-size: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  opacity: 1;
+  overflow: hidden;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.page-home .projects article span {
+  padding: 5px 8px;
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+  background-color: #222;
+  color: #fff;
+  position: absolute;
+  top: -30px;
+  left: 15px;
+  -webkit-transition: top 0.2s ease-in;
+  transition: top 0.2s ease-in;
+}
+
+.page-home .projects article:hover span {
+  top: 0;
+}
+
+.page-home .projects .project-1-1 article {
+  padding-bottom: 100%;
+}
+
+.page-home .projects .project-1-2 {
+  grid-row: span 2;
+}
+
+.page-home .projects .project-1-2 article {
+  padding-bottom: 50%;
+}
+
+.page-home .projects .project-2-1 {
+  grid-column: span 2;
+}
+
+.page-home .projects .project-2-1 article {
+  padding-bottom: 50%;
+}
+
+.page-home .projects .project-2-2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.page-home .projects .project-2-2 article {
+  padding-bottom: 100%;
+}
+
+.page-home h1, .page-home h2, .page-home h3, .page-home h4 {
+  display: block;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.page-home h1 {
+  font-size: 72px;
+}
+
+.page-home h2 {
+  font-size: 42px;
+}
+
+.page-home h3 {
+  font-size: 28px;
+}
+
+.page-home h4 {
+  font-size: 18px;
+}
+
+.page-home p {
+  display: block;
+  max-width: 60%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.page-home p b, .page-home p strong {
+  font-weight: 600;
+}
+
+.page-home p a {
+  color: #1c6ffe;
+  text-decoration: none;
+  border-bottom: 2px solid #1c6ffe;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.page-home p a:hover {
+  background-color: #1c6ffe;
+  color: #fff;
+}
+
+.page-home ul {
+  display: block;
+  max-width: 60%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.page-home ul li {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.page-home ul li:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 100%;
+}
+
+.page-home ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.page-home .two-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-home .two-column .column {
+  width: 90%;
+}
+
+.page-home .two-column p {
+  max-width: none;
+}
