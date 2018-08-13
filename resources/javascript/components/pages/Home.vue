@@ -3,7 +3,7 @@
         <div class="wrapper">
             <section>
                 <h1>Hi, I'm Alex</h1>
-                <p>I am a Full Stack Web Developer based in Middlesbrough, UK. I enjoy building <strong>vibrant</strong> & <strong>functional</strong> <router-link :to="{ path: 'projects', query: { type: 'website' } }">websites</router-link> and <router-link :to="{ path: 'projects', query: { type: 'app' } }">apps</router-link>. Here are some of the projects I have worked on;</p>
+                <p>I am a Full Stack Web Developer based in Middlesbrough, UK. I am passionate about building <strong>vibrant</strong> & <strong>functional</strong> <router-link :to="{ path: 'projects', query: { type: 'website' } }">websites</router-link> and <router-link :to="{ path: 'projects', query: { type: 'app' } }">apps</router-link>. Here are some of the projects I have worked on;</p>
             </section>
         </div>
 

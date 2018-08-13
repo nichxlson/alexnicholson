@@ -40136,7 +40136,7 @@ var render = function() {
           "p",
           [
             _vm._v(
-              "I am a Full Stack Web Developer based in Middlesbrough, UK. I enjoy building "
+              "I am a Full Stack Web Developer based in Middlesbrough, UK. I am passionate about building "
             ),
             _c("strong", [_vm._v("vibrant")]),
             _vm._v(" & "),
