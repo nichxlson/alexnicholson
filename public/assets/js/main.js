@@ -40155,7 +40155,7 @@ var render = function() {
               { attrs: { to: { path: "projects", query: { type: "app" } } } },
               [_vm._v("apps")]
             ),
-            _vm._v(". Here are some of the projects I have worked on.")
+            _vm._v(". Here are some of the projects I have worked on;")
           ],
           1
         )
