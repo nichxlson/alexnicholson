@@ -15,12 +15,13 @@
         article {
             height: 0;
             font-size: 0;
-            background-size: cover;
+            background-size: 100%;
             background-repeat: no-repeat;
             background-position: center center;
             position: relative;
             opacity: 1;
             overflow: hidden;
+            cursor: pointer;
             transition: opacity 0.2s;
 
             span {
