@@ -12,28 +12,28 @@
                 <div class="project-2-1">
                     <router-link to="projects/zawaya-property-website">
                         <article style="background-image: url('/assets/img/home/project-zawaya3.jpg');">
-                            <span>Zawaya Property</span>
+                            <span>Zawaya Property Website</span>
                         </article>
                     </router-link>
                 </div>
                 <div class="project-2-2">
                     <router-link to="projects/weatherbys-hamilton-app">
                         <article style="background-image: url('/assets/img/home/project-wh3.jpg');">
-                            <span>Weatherbys Hamilton App</span>
+                            <span>Weatherbys Hamilton Android App</span>
                         </article>
                     </router-link>
                 </div>
                 <div class="project-1-1">
                     <router-link to="projects/cbl-website">
                         <article style="background-image: url('/assets/img/home/project-cbl.jpg');">
-                            <span>Coffee Bike London</span>
+                            <span>Coffee Bike London Website</span>
                         </article>
                     </router-link>
                 </div>
                 <div class="project-1-1">
                     <router-link to="projects/functional-physio-website">
                         <article style="background-image: url('/assets/img/home/project-fp2.jpg');">
-                            <span>Functional Physiotherapy</span>
+                            <span>Functional Physiotherapy Website</span>
                         </article>
                     </router-link>
                 </div>

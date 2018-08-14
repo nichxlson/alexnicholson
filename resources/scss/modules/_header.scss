@@ -81,11 +81,11 @@ header {
                     background-color: $colour-main;
                     transition: right 0.2s;
                 }
+            }
 
-                &:hover {
-                    &:after {
-                        right: 0;
-                    }
+            &:hover {
+                span:after {
+                    right: 0;
                 }
             }
 
