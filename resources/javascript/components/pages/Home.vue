@@ -1,9 +1,9 @@
 <template>
-    <div class="page-home">
+    <div class="page page-home">
         <div class="wrapper">
             <section>
                 <h1>Hi, I'm Alex</h1>
-                <p>I am a Full Stack Web Developer based in Middlesbrough, UK. I am passionate about building <strong>vibrant</strong> & <strong>functional</strong> <router-link :to="{ path: 'projects', query: { type: 'website' } }">websites</router-link> and <router-link :to="{ path: 'projects', query: { type: 'app' } }">apps</router-link>. Here are some of the projects I have worked on;</p>
+                <p class="short-paragraph">I am a Full Stack Web Developer based in Middlesbrough, UK. I am passionate about building <strong>vibrant</strong> & <strong>functional</strong> <router-link :to="{ path: 'projects', query: { type: 'website' } }">websites</router-link> and <router-link :to="{ path: 'projects', query: { type: 'app' } }">apps</router-link>. Here are some of the projects I have worked on;</p>
             </section>
         </div>
 
@@ -12,28 +12,28 @@
                 <div class="project-2-1">
                     <router-link to="projects/zawaya-property-website">
                         <article style="background-image: url('/assets/img/home/project-zawaya3.jpg');">
-                            <span>Zawaya Property Website</span>
+                            <!--<span>Zawaya Property Website</span>-->
                         </article>
                     </router-link>
                 </div>
                 <div class="project-2-2">
                     <router-link to="projects/weatherbys-hamilton-app">
                         <article style="background-image: url('/assets/img/home/project-wh3.jpg');">
-                            <span>Weatherbys Hamilton Android App</span>
+                            <!--<span>Weatherbys Hamilton Android App</span>-->
                         </article>
                     </router-link>
                 </div>
                 <div class="project-1-1">
                     <router-link to="projects/cbl-website">
                         <article style="background-image: url('/assets/img/home/project-cbl.jpg');">
-                            <span>Coffee Bike London Website</span>
+                            <!--<span>Coffee Bike London Website</span>-->
                         </article>
                     </router-link>
                 </div>
                 <div class="project-1-1">
                     <router-link to="projects/functional-physio-website">
                         <article style="background-image: url('/assets/img/home/project-fp2.jpg');">
-                            <span>Functional Physiotherapy Website</span>
+                            <!--<span>Functional Physiotherapy Website</span>-->
                         </article>
                     </router-link>
                 </div>
@@ -58,7 +58,7 @@
 
         <div class="wrapper no-padding">
             <section class="cta">
-                <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#097;&#108;&#101;&#120;&#110;&#105;&#099;&#104;&#111;&#108;&#115;&#111;&#110;&#046;&#099;&#111;&#046;&#117;&#107;" target="_blank">Email me</a>
+                <a href="mailto:hello@alexnicholson.co.uk" target="_blank">Email me</a>
             </section>
         </div>
 

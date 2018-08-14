@@ -5,6 +5,7 @@ import VueAnalytics from 'vue-analytics';
 import Home from './components/pages/Home.vue';
 import Projects from './components/pages/Projects.vue';
 import Contact from './components/pages/Contact.vue';
+import WeatherbysHamiltonApp from './components/pages/projects/WeatherbysHamiltonApp.vue';
 
 require('./bootstrap');
 require('es6-promise').polyfill();
@@ -19,14 +20,17 @@ const router = new VueRouter({
         name: 'projects',
         component: Projects
     }, {
-        path: '/projects/:slug',
-        name: 'projects-single',
-        component: Contact
+        path: '/projects/weatherbys-hamilton-app',
+        name: 'project-wh',
+        component: WeatherbysHamiltonApp
     }, {
         path: '*',
         name: '404',
         component: Contact
-    }]
+    }],
+    scrollBehavior (to, from, savedPosition) {
+        return { x: 0, y: 0 }
+    }
 });
 
 const HTTP = axios.create({
