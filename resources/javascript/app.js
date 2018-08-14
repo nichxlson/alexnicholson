@@ -1,13 +1,33 @@
 import axios from 'axios';
 import VueRouter from 'vue-router';
+import VueAnalytics from 'vue-analytics';
 
 import Home from './components/pages/Home.vue';
-import About from './components/pages/About.vue';
 import Projects from './components/pages/Projects.vue';
 import Contact from './components/pages/Contact.vue';
 
 require('./bootstrap');
 require('es6-promise').polyfill();
+
+const router = new VueRouter({
+    routes: [{
+        path: '/',
+        name: 'home',
+        component: Home
+    }, {
+        path: '/projects',
+        name: 'projects',
+        component: Projects
+    }, {
+        path: '/projects/:slug',
+        name: 'projects-single',
+        component: Contact
+    }, {
+        path: '*',
+        name: '404',
+        component: Contact
+    }]
+});
 
 const HTTP = axios.create({
     baseURL: window.An.url
@@ -31,27 +51,12 @@ Object.defineProperties(Vue.prototype, {
 
 Vue.use(VueRouter);
 
-Vue.component('example', require('./components/Example.vue'));
-
-const router = new VueRouter({
-    routes: [{
-        path: '/',
-        name: 'home',
-        component: Home
-    }, {
-        path: '/projects',
-        name: 'projects',
-        component: Projects
-    }, {
-        path: '/projects/:slug',
-        name: 'projects-single',
-        component: Contact
-    }, {
-        path: '*',
-        name: '404',
-        component: Contact
-    }]
+Vue.use(VueAnalytics, {
+    id: 'UA-123884265-1',
+    router
 });
+
+Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
     router,
