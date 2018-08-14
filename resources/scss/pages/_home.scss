@@ -77,6 +77,32 @@
         }
     }
 
+    .cta {
+        display: flex;
+        width: 100%;
+        padding: 50px 0;
+        flex-direction: column;
+        background-color: #f5f5f5;
+        align-items: center;
+
+        a {
+            display: inline-block;
+            padding: 8px 15px 10px;
+            font-family: $font-family-space-mono;
+            font-size: 22px;
+            font-weight: $font-weight-bold;
+            color: $colour-main;
+            text-decoration: none;
+            border: 2px solid $colour-main;
+            transition: background-color 0.2s, color 0.2s;
+
+            &:hover {
+                background-color: $colour-main;
+                color: #fff;
+            }
+        }
+    }
+
     h1, h2, h3, h4 {
         display: block;
         font-family: $font-family;
@@ -133,6 +159,7 @@
         font-size: 14px;
         line-height: 1.4;
         margin-bottom: 20px;
+        column-count: 2;
 
         li {
             display: block;
