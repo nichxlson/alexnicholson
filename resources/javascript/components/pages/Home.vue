@@ -72,6 +72,7 @@
                         <ul>
                             <li>HTML5</li>
                             <li>CSS3</li>
+                            <li>Sass (SCSS)</li>
                             <li>JavaScript ES6</li>
                             <li>jQuery</li>
                             <li>PHP</li>
@@ -90,8 +91,8 @@
                             <li>PhpStorm / Visual Studio Code</li>
                             <li>Photoshop</li>
                             <li>Git</li>
-                            <li>Gulp / Webpack / Laravel Mix</li>
-                            <li>Sass</li>
+                            <li>Gulp</li>
+                            <li>Webpack / Laravel Mix</li>
                         </ul>
                     </div>
                 </div>

@@ -29,50 +29,12 @@
 </template>
 
 <script>
+    import ProjectStore from '../../stores/ProjectStore';
+
     export default {
         data() {
             return {
-                projects: [{
-                    name: 'Weatherbys Hamilton Android App',
-                    slug: 'weatherbys-hamilton-app',
-                    tags: ['app'],
-                    img: 'wh',
-                }, {
-                    name: 'Zawaya Property Website',
-                    slug: 'zawaya-property-website',
-                    tags: ['website'],
-                    img: 'zawaya',
-                }, {
-                    name: 'Coffee Bike London Website',
-                    slug: 'cbl-website',
-                    tags: ['website'],
-                    img: 'cbl',
-                }, {
-                    name: 'Functional Physiotherapy Website',
-                    slug: 'functional-physio-website',
-                    tags: ['website'],
-                    img: 'fp',
-                }, {
-                    name: 'Hywell Waters Website',
-                    slug: 'hywell-waters-website',
-                    tags: ['website'],
-                    img: 'hywell',
-                }, {
-                    name: 'WorldCOB Website',
-                    slug: 'worldcob-website',
-                    tags: ['website'],
-                    img: 'worldcob',
-                }, {
-                    name: 'Sohar Calculator App',
-                    slug: 'sohar-calculator-app',
-                    tags: ['app', 'website'],
-                    img: 'sohar-calculator',
-                }, {
-                    name: 'Sansaya Website',
-                    slug: 'sansaya-website',
-                    tags: ['website'],
-                    img: 'sansaya',
-                }]
+                projects: ProjectStore.data.projects
             }
         },
 

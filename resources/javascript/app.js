@@ -4,8 +4,8 @@ import VueAnalytics from 'vue-analytics';
 
 import Home from './components/pages/Home.vue';
 import Projects from './components/pages/Projects.vue';
+import Project from './components/pages/Project.vue';
 import Contact from './components/pages/Contact.vue';
-import WeatherbysHamiltonApp from './components/pages/projects/WeatherbysHamiltonApp.vue';
 
 require('./bootstrap');
 require('es6-promise').polyfill();
@@ -20,9 +20,9 @@ const router = new VueRouter({
         name: 'projects',
         component: Projects
     }, {
-        path: '/projects/weatherbys-hamilton-app',
-        name: 'project-wh',
-        component: WeatherbysHamiltonApp
+        path: '/projects/:slug',
+        name: 'project',
+        component: Project
     }, {
         path: '*',
         name: '404',
