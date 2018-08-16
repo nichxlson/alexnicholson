@@ -3,7 +3,7 @@
         <div class="wrapper">
             <section>
                 <h1>Projects</h1>
-                <p class="short-paragraph">Below are a selection of different projects I have worked on. Although each project has been different and some were challenging, they have all been crafted with love.</p>
+                <p class="short-paragraph">Found below is a preview of a range of different projects I have created within a team. Each project is unique yet had been somewhat challenging m therefore had created an incentive for me to further develop my skills to successfully complete the task. The passion I inhibit for web development, along with dedication, has resulted in the following work which I am extremely proud of;</p>
                 <p class="short-paragraph" v-show="filter != null">Showing {{ filter }}s. Click <router-link to="/projects">here</router-link> to see all projects.</p>
             </section>
         </div>
