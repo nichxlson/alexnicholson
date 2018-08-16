@@ -36,6 +36,15 @@ body {
 
     @media (max-width: 1200px) {
         max-width: 90%;
+        padding: 0 60px;
+    }
+
+    @media (max-width: 900px) {
+        padding: 0 50px;
+    }
+
+    @media (max-width: 420px) {
+        padding: 0 20px;
     }
 
     &.no-padding {

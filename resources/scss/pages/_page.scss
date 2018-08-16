@@ -166,4 +166,139 @@
             }
         }
     }
+
+    @media (max-width: 1024px) {
+        h1, h2, h3, h4 {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 58px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        p {
+            &.short-paragraph {
+                max-width: 85%;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        section {
+            display: block;
+            padding: 40px 0 20px;
+
+            &.no-padding {
+                padding: 0;
+            }
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        p {
+            &.short-paragraph {
+                max-width: 100%;
+            }
+        }
+
+        ul {
+            max-width: 100%;
+            column-count: 3;
+        }
+
+        .cta {
+            padding: 40px 0;
+        }
+    }
+
+    @media (max-width: 540px) {
+        h1 {
+            font-size: 42px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        ul {
+            column-count: 2;
+        }
+    }
+
+    @media (max-width: 440px) {
+        ul {
+            column-count: 1;
+        }
+    }
+
+    @media (max-width: 420px) {
+        section {
+            display: block;
+            padding: 20px 0 1px;
+
+            &.no-padding {
+                padding: 0;
+            }
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        .cta {
+            padding: 20px 0;
+        }
+    }
 }

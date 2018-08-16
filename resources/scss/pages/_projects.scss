@@ -56,4 +56,38 @@
             }
         }
     }
+
+    @media (max-width: 768px) {
+        .projects {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            article {
+                .inner {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+
+                span {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .projects {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 460px) {
+        .projects {
+            article {
+                span {
+                    font-size: 13px;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
 }

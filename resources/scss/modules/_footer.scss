@@ -31,4 +31,30 @@ footer {
             }
         }
     }
+
+    @media (max-width: 768px) {
+        padding: 30px 0;
+    }
+
+    @media (max-width: 600px) {
+        text-align: center;
+
+        .wrapper {
+            display: block;
+        }
+
+        .icons {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+
+            a {
+                margin: 0 15px;
+
+                &:last-of-type {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
 }
