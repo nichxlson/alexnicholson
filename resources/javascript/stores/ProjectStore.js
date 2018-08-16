@@ -16,7 +16,7 @@ export default {
             slug: 'zawaya-property-website',
             tags: ['website'],
             img: 'zawaya',
-            intro: 'Built a responsive website in Craft CMS. Used VueJS throughout the website to create dynamic content such as property listings or popup contact boxes. Integrated the Mailchimp API into the CMS to create custom email templates based on selected properties. Utilised Laravel Mix to minify images and compress JavaScript and CSS files.',
+            intro: 'Built a responsive website in Craft CMS. Used VueJS throughout the website to create dynamic content such as property listings and popup contact boxes. Integrated the Mailchimp API into the CMS to create custom email templates based on selected properties. Utilised Laravel Mix to minify images and compress JavaScript and CSS files.',
             link: 'https://zawayaproperty.com/',
             technologies: ['HTML5', 'CSS3', 'SCSS', 'JavaScript', 'VueJS', 'PHP', 'CraftCMS'],
             images: ['screen-03.jpg', 'screen-04.jpg', 'screen-05.jpg', 'screen-06.jpg', 'screen-10.jpg', 'screen-12.jpg']
