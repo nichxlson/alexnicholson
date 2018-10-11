@@ -12,15 +12,6 @@ export default {
             technologies: ['Java', 'HTML5', 'CSS3', 'JavaScript', 'VueJS', 'PHP', 'Laravel'],
             images: ['screen-02.jpg', 'screen-01.jpg', 'screen-03.jpg', 'screen-09.jpg', 'screen-04.jpg', 'screen-05.jpg', 'screen-07.jpg', 'screen-08.jpg']
         }, {
-            name: 'Zawaya Property Website',
-            slug: 'zawaya-property-website',
-            tags: ['website'],
-            img: 'zawaya',
-            intro: 'Built a responsive website in Craft CMS. Used VueJS throughout the website to create dynamic content such as property listings and popup contact boxes. Integrated the Mailchimp API into the CMS to create custom email templates based on selected properties. Utilised Laravel Mix to minify images and compress JavaScript and CSS files.',
-            link: 'https://zawayaproperty.com/',
-            technologies: ['HTML5', 'CSS3', 'SCSS', 'JavaScript', 'VueJS', 'PHP', 'CraftCMS'],
-            images: ['screen-03.jpg', 'screen-04.jpg', 'screen-05.jpg', 'screen-06.jpg', 'screen-10.jpg', 'screen-12.jpg']
-        }, {
             name: 'Coffee Bike London Website',
             slug: 'cbl-website',
             tags: ['website'],
@@ -47,24 +38,6 @@ export default {
             link: 'http://hywellwaters.com/',
             technologies: ['HTML5', 'CSS3', 'SCSS', 'JavaScript', 'jQuery', 'PHP', 'WordPress'],
             images: ['screen-01.jpg', 'screen-04.jpg', 'screen-02.jpg', 'screen-03.jpg']
-        }, {
-            name: 'WorldCOB Website',
-            slug: 'worldcob-website',
-            tags: ['website'],
-            img: 'worldcob',
-            intro: 'Built a responsive WordPress website for a client to upgrade the previous outdated website. Loading times and overall functionality has improved. Used Laravel to create a member zone that allowed users to view a directory of business and export the list.',
-            link: 'http://www.worldcob.org/en/',
-            technologies: ['HTML5', 'CSS3', 'SCSS', 'JavaScript', 'jQuery', 'PHP', 'WordPress', 'Laravel'],
-            images: ['screen-01.jpg', 'screen-02.jpg', 'screen-05.jpg', 'screen-10.jpg', 'screen-11.jpg']
-        }, {
-            name: 'Sohar Calculator App',
-            slug: 'sohar-calculator-app',
-            tags: ['app', 'website'],
-            img: 'sohar-calculator',
-            intro: 'Produced a web app that worked offline on iOS and Android devices. AngularJS was used to make sure everything worked as single page and didn\'t require a page refresh. Used PHP and MySQL to save entries to a database.',
-            link: 'http://soharportandfreezone.com/pos-new/#/',
-            technologies: ['HTML5', 'CSS3', 'PHP', 'MySQL', 'AngularJS'],
-            images: ['screen-01.jpg', 'screen-02.jpg', 'screen-03.jpg', 'screen-04.jpg', 'screen-05.jpg']
         }, {
             name: 'Sansaya Website',
             slug: 'sansaya-website',

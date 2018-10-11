@@ -10,9 +10,9 @@
         <div class="wrapper no-padding">
             <section class="projects no-padding">
                 <div class="project-2-1">
-                    <router-link to="projects/zawaya-property-website">
-                        <article style="background-image: url('/assets/img/home/project-zawaya3.jpg');">
-                            <!--<span>Zawaya Property Website</span>-->
+                    <router-link to="projects/sansaya-website">
+                        <article style="background-image: url('/assets/img/home/project-sansaya.jpg');">
+                            <!--<span>Sansaya Website</span>-->
                         </article>
                     </router-link>
                 </div>
