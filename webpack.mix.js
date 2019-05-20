@@ -1,8 +1,6 @@
 const { mix } = require('laravel-mix');
 const webpack = require('webpack');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const imageminMozjpeg = require('imagemin-mozjpeg');
 
 const banner = 'Copyright (c) ' + new Date().getFullYear() + ' alexnicholson.co.uk';
 
