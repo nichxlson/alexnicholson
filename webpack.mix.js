@@ -27,6 +27,7 @@ mix.sass('resources/scss/main.scss', './css');
 
 mix.js('resources/javascript/app.js', './js/main.js');
 
+/*
 mix.webpackConfig({
     plugins: [
         new CopyWebpackPlugin([{
@@ -44,6 +45,7 @@ mix.webpackConfig({
         new webpack.BannerPlugin(banner)
     ]
 });
+*/
 
 if(mix.inProduction()) {
     mix.version();
