@@ -27,25 +27,15 @@ mix.sass('resources/scss/main.scss', './css');
 
 mix.js('resources/javascript/app.js', './js/main.js');
 
-/*
 mix.webpackConfig({
     plugins: [
         new CopyWebpackPlugin([{
             from: 'resources/images',
             to: './img',
         }]),
-        new ImageminPlugin({
-            test: /\.(jpe?g|png|gif|svg)$/i,
-            plugins: [
-                imageminMozjpeg({
-                    quality: 90,
-                })
-            ]
-        }),
         new webpack.BannerPlugin(banner)
     ]
 });
-*/
 
 if(mix.inProduction()) {
     mix.version();
