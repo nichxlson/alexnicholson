@@ -60,8 +60,7 @@ Vue.use(VueAnalytics, {
     router
 });
 
-Vue.component('example', require('./components/Example.vue'));
-Vue.component('skill', require('./components/Skill.vue'));
+//Vue.component('skill', require('./components/Skill.vue'));
 
 const app = new Vue({
     router,
