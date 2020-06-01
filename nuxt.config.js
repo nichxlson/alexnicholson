@@ -85,12 +85,14 @@ export default {
     transition: 'fade',
 
     generate: {
-        routes() {
-            const projects = this.$store.getters.getProjects;
+        fallback: true,
 
-            return projects.map(project => {
-                return '/projects/' + project.slug;
-            })
-        }
+        routes: [
+            '/projects/weatherbys-hamilton-app',
+            '/projects/cbl-website',
+            '/projects/functional-physio-website',
+            '/projects/hywell-waters-website',
+            '/projects/sansaya-website',
+        ]
     }
 }
