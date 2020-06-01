@@ -63,12 +63,6 @@ export default {
     */
     buildModules: [
     ],
-    googleAnalytics: {
-        debug: {
-            enabled: true,
-            sendHitTask: true
-        }
-    },
     /*
     ** Nuxt.js modules
     */
