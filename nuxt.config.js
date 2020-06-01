@@ -62,14 +62,20 @@ export default {
     ** Nuxt.js dev-modules
     */
     buildModules: [
-        ['@nuxtjs/google-analytics', {
-            id: 'UA-123884265-1'
-        }]
     ],
+    googleAnalytics: {
+        debug: {
+            enabled: true,
+            sendHitTask: true
+        }
+    },
     /*
     ** Nuxt.js modules
     */
     modules: [
+        ['@nuxtjs/google-analytics', {
+            id: 'UA-123884265-1'
+        }]
     ],
     /*
     ** Build configuration
@@ -94,5 +100,5 @@ export default {
             '/projects/hywell-waters-website',
             '/projects/sansaya-website',
         ]
-    }
+    },
 }
