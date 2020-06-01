@@ -82,5 +82,15 @@ export default {
         }
     },
 
-    transition: 'fade'
+    transition: 'fade',
+
+    generate: {
+        routes() {
+            const projects = this.$store.getters.getProjects;
+
+            return projects.map(project => {
+                return '/projects/' + project.slug;
+            })
+        }
+    }
 }
