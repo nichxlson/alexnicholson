@@ -1,0 +1,100 @@
+.page-home {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        article {
+            height: 0;
+            font-size: 0;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            opacity: 1;
+            overflow: hidden;
+            cursor: pointer;
+            transition: opacity 0.2s;
+
+            span {
+                padding: 5px 8px;
+                font-family: $font-family-space-mono;
+                font-size: 13px;
+                background-color: #222;
+                color: #fff;
+                position: absolute;
+                top: -30px;
+                left: 15px;
+                transition: top 0.2s ease-in;
+            }
+
+            &:hover {
+                //opacity: 1;
+
+                span {
+                    top: 0;
+                }
+            }
+        }
+
+        .project-1-1 {
+            article {
+                padding-bottom: 100%;
+            }
+        }
+
+        .project-1-2 {
+            grid-row: span 2;
+
+            article {
+                padding-bottom: 50%;
+            }
+        }
+
+        .project-2-1 {
+            grid-column: span 2;
+
+            article {
+                padding-bottom: 50%;
+            }
+        }
+
+        .project-2-2 {
+            grid-column: span 2;
+            grid-row: span 2;
+
+            article {
+                padding-bottom: 100%;
+            }
+        }
+    }
+
+    .two-column {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .column {
+            width: 90%;
+        }
+
+        p {
+            max-width: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .two-column {
+            display: block;
+
+            .column {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .projects {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

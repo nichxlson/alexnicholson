@@ -1,0 +1,17 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}
+}
+
+@mixin linear-gradient($top, $bottom, $t: 0%, $b: 100%) {
+    background: $top;
+    background: -moz-linear-gradient(top, $top $t, $bottom $b);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($t, $top), color-stop($b, $bottom));
+    background: -webkit-linear-gradient(top, $top $t, $bottom $b);
+    background: -o-linear-gradient(top, $top $t, $bottom $b);
+    background: -ms-linear-gradient(top, $top $t, $bottom $b);
+    background: linear-gradient(to bottom, $top $t, $bottom $b);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$top}', endColorstr='#{$bottom}', GradientType=1);
+}
